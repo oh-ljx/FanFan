@@ -1,0 +1,27 @@
+# Android / Gradle
+.gradle/
+.kotlin/
+local.properties
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Signing and local secrets
+*.jks
+*.keystore
+keystore.properties
+release-signing/
+
+# OS and temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Release APKs live in GitHub Releases, not in the repo
+release/
