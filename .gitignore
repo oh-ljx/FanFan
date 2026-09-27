@@ -17,6 +17,11 @@ captures/
 keystore.properties
 release-signing/
 
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+
 # OS and temporary files
 .DS_Store
 Thumbs.db

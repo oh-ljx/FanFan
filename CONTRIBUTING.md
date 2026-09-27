@@ -14,10 +14,10 @@
 - Android SDK Platform 37
 - Android Studio，或 Android SDK Command-line Tools
 
-在仓库根目录验证环境和项目：
+在仓库根目录验证环境和项目（Android 工程位于 `android/`）：
 
 ```bash
-./gradlew lintDebug testDebugUnitTest assembleDebug assembleRelease
+cd android && ./gradlew lintDebug testDebugUnitTest assembleDebug assembleRelease
 ```
 
 如果改动涉及权限、播放、动态照片或系统回收站，还需在模拟器或专用测试设备上验证。请勿使用唯一副本或私人媒体测试删除流程。
@@ -48,7 +48,7 @@ build: 构建与依赖
 ## Pull Request 检查清单
 
 - [ ] 改动范围单一，未包含本地配置、签名文件、构建产物或私人媒体。
-- [ ] `./gradlew lintDebug testDebugUnitTest assembleDebug assembleRelease` 通过。
+- [ ] `cd android && ./gradlew lintDebug testDebugUnitTest assembleDebug assembleRelease` 通过。
 - [ ] 新增或变化的状态逻辑有相应单元测试。
 - [ ] 界面改动附有前后截图，并检查浅色/深色媒体背景下的可读性。
 - [ ] 权限或删除行为说明了测试的 Android 版本、授权范围与系统确认结果。
